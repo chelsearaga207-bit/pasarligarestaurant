@@ -1,63 +1,278 @@
 <!doctype html>
-<p class="mb-1">Iga bakarnya juara. Reservasi online sangat praktis.</p>
-<small class="text-muted">— Raka, Instagram</small>
-</div></div>
-<div class="col-md-4"><div class="p-4 border rounded-4 h-100 reveal">
-<div class="rating">★★★★★</div>
-<p class="mb-1">Suasana nyaman untuk keluarga. Banyak opsi halal dan vegetarian.</p>
-<small class="text-muted">— Hani, TikTok</small>
-</div></div>
-</div>
-</div>
-</section>
+<html lang="id" class="h-100">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pasarliga Restaurant | Hidangan Nusantara Modern di Pusat Kota</title>
+  <meta name="description" content="Pasarliga Restaurant menyajikan hidangan Nusantara modern dengan bahan segar harian. Reservasi online, menu musiman, dan layanan take-away cepat. Buka setiap hari." />
+  <link rel="canonical" href="https://www.pasarligarestaurant.com/" />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Pasarliga Restaurant" />
+  <meta property="og:title" content="Pasarliga Restaurant | Hidangan Nusantara Modern" />
+  <meta property="og:description" content="Rasakan pengalaman bersantap yang cepat, segar, dan penuh cita rasa. Reservasi daring tersedia." />
+  <meta property="og:url" content="https://www.pasarligarestaurant.com/" />
+  <meta property="og:image" content="https://www.pasarligarestaurant.com/assets/og-cover.jpg" />
+  <meta property="og:locale" content="id_ID" />
 
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Pasarliga Restaurant | Hidangan Nusantara Modern" />
+  <meta name="twitter:description" content="Menu musiman, bahan segar harian, reservasi online mudah." />
+  <meta name="twitter:image" content="https://www.pasarligarestaurant.com/assets/og-cover.jpg" />
 
-<!-- Location & Hours -->
-<section class="section bg-light" id="visit">
-<div class="container">
-<div class="row g-4 align-items-center">
-<div class="col-lg-6">
-<h2 class="h1">Kunjungi Kami</h2>
-<p class="text-secondary">Jl. Srikaya No. 12, Jakarta Pusat, 10110. Parkir luas, dekat stasiun MRT.</p>
-<ul class="list-unstyled mb-4">
-<li>Senin–Jumat: 10.00–22.00</li>
-<li>Sabtu–Minggu: 08.00–23.00</li>
-</ul>
-<a class="btn btn-brand text-white" href="/reservations">Pesan Meja</a>
-</div>
-<div class="col-lg-6">
-<div class="ratio ratio-16x9 rounded-4 overflow-hidden shadow-soft reveal">
-<iframe title="Lokasi Pasarliga Restaurant" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.661!2d106.8272!3d-6.1754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sPasarliga%20Restaurant!5e0!3m2!1sid!2sid!4v1730000000"></iframe>
-</div>
-</div>
-</div>
-</div>
-</section>
+  <!-- Preconnect & Preload -->
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+  <link rel="preload" as="image" href="/assets/hero-1280.jpg" imagesrcset="/assets/hero-640.jpg 640w, /assets/hero-960.jpg 960w, /assets/hero-1280.jpg 1280w" imagesizes="(max-width: 768px) 100vw, 960px" />
 
+  <!-- Bootstrap 5 (lightweight via jsdelivr) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-<footer class="footer mt-auto py-5">
-<div class="container">
-<div class="row gy-4 align-items-center">
-<div class="col-md-6">
-<div class="d-flex align-items-center gap-3">
-<img src="/assets/logo.svg" alt="Logo Pasarliga Restaurant" width="40" height="40" />
-<div>
-<div class="fw-semibold">Pasarliga Restaurant</div>
-<small class="d-block">© <span id="y"></span> Pasarliga Group. All rights reserved.</small>
-</div>
-</div>
-</div>
-<div class="col-md-6 text-md-end">
-<a class="link-light me-3" href="/privacy">Kebijakan Privasi</a>
-<a class="link-light" href="/sitemap.xml">Sitemap</a>
-</div>
-</div>
-</div>
-</footer>
+  <!-- Main CSS (critical above-the-fold inline to improve FCP) -->
+  <style>
+    :root{--brand:#0ea5e9;--dark:#0b1220;--accent:#f59e0b;--muted:#64748b}
+    html{scroll-behavior:smooth}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Helvetica,Arial,sans-serif;color:#0f172a;background:#fff}
+    .btn-brand{background:var(--brand);border:0}.btn-brand:hover{filter:brightness(.95)}
+    .nav-link{font-weight:600}
+    header.hero{position:relative;min-height:86vh;display:grid;place-items:center;overflow:hidden}
+    .hero::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,18,32,.6),rgba(11,18,32,.15));z-index:1}
+    .hero .content{position:relative;z-index:2;color:#fff;text-align:center;padding:4rem 1rem}
+    .reveal{opacity:0;transform:translateY(16px);transition:opacity .7s ease,transform .7s ease}
+    .reveal.in{opacity:1;transform:none}
+    .section{padding:72px 0}
+    .shadow-soft{box-shadow:0 10px 30px rgba(2,8,23,.08)}
+    .badge-pill{border-radius:999px}
+    .rating{color:#f59e0b}
+    .footer{background:#0b1220;color:#cbd5e1}
+    @media (prefers-reduced-motion: reduce){.reveal{transition:none}}
+  </style>
+  <link rel="stylesheet" href="/assets/styles.css" />
 
+  <!-- JSON-LD: Organization & Restaurant & WebSite & Sitelinks Search -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"Pasarliga Restaurant",
+    "url":"https://www.pasarligarestaurant.com/",
+    "logo":"https://www.pasarligarestaurant.com/assets/logo.svg",
+    "sameAs":[
+      "https://www.instagram.com/pasarligarestaurant",
+      "https://www.facebook.com/pasarligarestaurant",
+      "https://www.tiktok.com/@pasarligarestaurant",
+      "https://g.page/pasarliga-restaurant"
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Pasarliga Restaurant",
+    "image": "https://www.pasarligarestaurant.com/assets/og-cover.jpg",
+    "servesCuisine": ["Indonesia","Fusion","Halal"],
+    "priceRange": "$$",
+    "telephone": "+62-21-555-0190",
+    "url":"https://www.pasarligarestaurant.com/",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Jl. Srikaya No. 12",
+      "addressLocality": "Jakarta Pusat",
+      "postalCode": "10110",
+      "addressCountry": "ID"
+    },
+    "geo": {"@type":"GeoCoordinates","latitude": -6.1754, "longitude": 106.8272},
+    "openingHoursSpecification": [
+      {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"10:00","closes":"22:00"},
+      {"@type":"OpeningHoursSpecification","dayOfWeek":["Saturday","Sunday"],"opens":"08:00","closes":"23:00"}
+    ],
+    "acceptsReservations": "True",
+    "menu": "https://www.pasarligarestaurant.com/menu"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebSite",
+    "url":"https://www.pasarligarestaurant.com/",
+    "potentialAction": {
+      "@type":"SearchAction",
+      "target":"https://www.pasarligarestaurant.com/search?q={query}",
+      "query-input":"required name=query"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Beranda","item":"https://www.pasarligarestaurant.com/"},
+      {"@type":"ListItem","position":2,"name":"Reservasi","item":"https://www.pasarligarestaurant.com/reservations"}
+    ]
+  }
+  </script>
+</head>
+<body class="d-flex flex-column h-100">
+  <!-- Topbar & Navigation -->
+  <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top" aria-label="Navigasi utama">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="/" aria-label="Pasarliga Restaurant">
+        <img src="/assets/logo.svg" alt="Pasarliga Restaurant" width="32" height="32" loading="eager" />
+        <span class="fw-bold">Pasarliga Restaurant</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="/menu">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="/about">Tentang</a></li>
+          <li class="nav-item"><a class="nav-link" href="/reservations">Reservasi</a></li>
+          <li class="nav-item"><a class="nav-link" href="/contact">Kontak</a></li>
+        </ul>
+        <a class="btn btn-brand text-white ms-lg-3" href="/reservations">Pesan Meja</a>
+      </div>
+    </div>
+  </nav>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
-<script src="/assets/script.js" defer></script>
-<script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+  <!-- Hero -->
+  <header class="hero">
+    <picture>
+      <source srcset="/assets/hero-1280.avif 1280w, /assets/hero-960.avif 960w, /assets/hero-640.avif 640w" type="image/avif" />
+      <source srcset="/assets/hero-1280.webp 1280w, /assets/hero-960.webp 960w, /assets/hero-640.webp 640w" type="image/webp" />
+      <img src="/assets/hero-1280.jpg" alt="Interior Pasarliga Restaurant yang modern dan hangat" class="w-100" loading="eager" fetchpriority="high" />
+    </picture>
+    <div class="content">
+      <h1 class="display-4 fw-bold">Pengalaman Bersantap yang Cepat, Segar, dan Berkesan</h1>
+      <p class="lead mb-4">Menu musiman dengan bahan segar harian. Pilihan halal, vegetarian, dan bebas gluten tersedia.</p>
+      <div class="d-flex gap-3 justify-content-center flex-wrap">
+        <a href="/menu" class="btn btn-light">Lihat Menu</a>
+        <a href="/reservations" class="btn btn-brand text-white">Reservasi Online</a>
+      </div>
+      <div class="mt-3"><span class="badge bg-light text-dark badge-pill">Indeksasi Mobile-First • HTTPS • PageSpeed Optimized</span></div>
+    </div>
+  </header>
+
+  <!-- Signature Dishes -->
+  <section class="section" id="dishes">
+    <div class="container">
+      <div class="row align-items-center gy-4">
+        <div class="col-lg-6 order-lg-2">
+          <div class="ratio ratio-4x3 shadow-soft rounded-4 overflow-hidden reveal">
+            <picture>
+              <source srcset="/assets/dishes.avif" type="image/avif" />
+              <source srcset="/assets/dishes.webp" type="image/webp" />
+              <img src="/assets/dishes.jpg" alt="Hidangan andalan Pasarliga Restaurant" loading="lazy" class="w-100 h-100 object-fit-cover" />
+            </picture>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <h2 class="h1">Hidangan Andalan</h2>
+          <p class="text-secondary">Kreasi chef kami memadukan cita rasa tradisional dengan teknik modern, memastikan rasa autentik yang konsisten.</p>
+          <ul class="list-unstyled">
+            <li class="mb-2">• Iga Bakar Madu — glaze madu, sambal matah</li>
+            <li class="mb-2">• Sate Ayam Rempah — bumbu kacang smoky</li>
+            <li class="mb-2">• Klepon Cheesecake — gula aren, parutan kelapa</li>
+          </ul>
+          <a class="link-underline link-underline-opacity-0" href="/menu">Jelajahi seluruh menu →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust & Speed Signals -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4"><div class="p-4 bg-white rounded-4 shadow-soft h-100 reveal">
+          <h3 class="h4">Kecepatan Memuat</h3>
+          <p class="mb-0">Template ringan, gambar terkompresi AVIF/WebP, lazy loading, dan CSS kritis untuk First Contentful Paint yang cepat.</p>
+        </div></div>
+        <div class="col-md-4"><div class="p-4 bg-white rounded-4 shadow-soft h-100 reveal">
+          <h3 class="h4">Responsif</h3>
+          <p class="mb-0">Mobile-first dengan grid Bootstrap 5. Diuji untuk berbagai ukuran layar dan kompatibel aksesibilitas.</p>
+        </div></div>
+        <div class="col-md-4"><div class="p-4 bg-white rounded-4 shadow-soft h-100 reveal">
+          <h3 class="h4">Keamanan</h3>
+          <p class="mb-0">HTTPS wajib, header keamanan, dan kebijakan cache/CDN untuk skor kepercayaan yang lebih baik di Google.</p>
+        </div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section class="section" id="reviews">
+    <div class="container">
+      <h2 class="h1 text-center mb-4">Apa Kata Pelanggan</h2>
+      <div class="row g-4">
+        <div class="col-md-4"><div class="p-4 border rounded-4 h-100 reveal">
+          <div class="rating">★★★★★</div>
+          <p class="mb-1">Rasa autentik, plating modern. Porsinya pas dan cepat disajikan.</p>
+          <small class="text-muted">— Dinda, Google Maps</small>
+        </div></div>
+        <div class="col-md-4"><div class="p-4 border rounded-4 h-100 reveal">
+          <div class="rating">★★★★★</div>
+          <p class="mb-1">Iga bakarnya juara. Reservasi online sangat praktis.</p>
+          <small class="text-muted">— Raka, Instagram</small>
+        </div></div>
+        <div class="col-md-4"><div class="p-4 border rounded-4 h-100 reveal">
+          <div class="rating">★★★★★</div>
+          <p class="mb-1">Suasana nyaman untuk keluarga. Banyak opsi halal dan vegetarian.</p>
+          <small class="text-muted">— Hani, TikTok</small>
+        </div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location & Hours -->
+  <section class="section bg-light" id="visit">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-6">
+          <h2 class="h1">Kunjungi Kami</h2>
+          <p class="text-secondary">Jl. Srikaya No. 12, Jakarta Pusat, 10110. Parkir luas, dekat stasiun MRT.</p>
+          <ul class="list-unstyled mb-4">
+            <li>Senin–Jumat: 10.00–22.00</li>
+            <li>Sabtu–Minggu: 08.00–23.00</li>
+          </ul>
+          <a class="btn btn-brand text-white" href="/reservations">Pesan Meja</a>
+        </div>
+        <div class="col-lg-6">
+          <div class="ratio ratio-16x9 rounded-4 overflow-hidden shadow-soft reveal">
+            <iframe title="Lokasi Pasarliga Restaurant" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.661!2d106.8272!3d-6.1754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sPasarliga%20Restaurant!5e0!3m2!1sid!2sid!4v1730000000"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer mt-auto py-5">
+    <div class="container">
+      <div class="row gy-4 align-items-center">
+        <div class="col-md-6">
+          <div class="d-flex align-items-center gap-3">
+            <img src="/assets/logo.svg" alt="Logo Pasarliga Restaurant" width="40" height="40" />
+            <div>
+              <div class="fw-semibold">Pasarliga Restaurant</div>
+              <small class="d-block">© <span id="y"></span> Pasarliga Group. All rights reserved.</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <a class="link-light me-3" href="/privacy">Kebijakan Privasi</a>
+          <a class="link-light" href="/sitemap.xml">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
+  <script src="/assets/script.js" defer></script>
+  <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
 </body>
 </html>
