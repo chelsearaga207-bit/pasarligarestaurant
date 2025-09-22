@@ -27,20 +27,3 @@ img{max-width:100%;height:auto}
 @media print{
 .navbar,.footer,iframe{display:none!important}
 }
-
-
-
-
-<!-- =============================================
-File: /assets/script.js
-Tiny JS: intersection observer for reveal animations & perf hints
-================================================ -->
-(()=>{
-const els=[...document.querySelectorAll('.reveal')];
-if('IntersectionObserver'in window){
-const io=new IntersectionObserver((entries)=>{
-entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}});
-},{threshold:.2});
-els.forEach(el=>io.observe(el));
-}else{els.forEach(el=>el.classList.add('in'))}
-})();
